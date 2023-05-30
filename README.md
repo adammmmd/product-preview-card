@@ -16,8 +16,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/adammmmd/product-preview-card)
-- Live Site URL: [](https://adammmmd.github.io/product-preview-card/)
+- Solution URL: [https://github.com/adammmmd/product-preview-card](https://github.com/adammmmd/product-preview-card)
+- Live Site URL: [https://adammmmd.github.io/product-preview-card/](https://adammmmd.github.io/product-preview-card/)
 
 ## My process
 
