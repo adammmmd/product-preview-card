@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+*,
+*::after, 
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+:root{
+    /* Primary Colors */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral Colors */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+body {
+    background-color: var(--Cream);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main{
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    background-color: var(--White);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px 25px;
+}
+
+.product-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.paragraph {
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: var(--Dark-grayish-blue);
+}
+
+.category {
+    letter-spacing: 2px;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.price-discount {
+    color: var(--Dark-cyan);
+}
+
+.price-normal {
+    text-decoration: line-through;
+}
+
+.cart-btn {
+    background-color: var(--Dark-cyan);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px 10px;
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-btn:active {
+    background-color: var();
+}
+
+.btn-logo {
+    width: 15px;
+}
+
+@media (min-width: 375px) {
+    main {
+        flex-direction: row;
+        width: 500px;
+        margin: 10px;
+    }
+
+    .product-img {
+        width: 50%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        object-fit:cover;
+        content: url(./images/image-product-desktop.jpg);
+    }
+
+    .description {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        width: 50%;
+    }
+}
